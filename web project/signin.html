@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Sign in</title>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="CSS/newsletter.css">
+    <link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+    <script type="text/javascript" src="JAVASCRIPT/event%20handlers.js"></script>
+    </head>
+    <body>
+    <div class="signin">
+        <nav id="navbar">
+        <a href="index.html"><h1 class="logo">MnM</h1></a>
+        <ul>
+          <li><a href="statistics.html">Statistics</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="questions.html">Questions</a></li>
+         </ul>
+        </nav>
+        <form action="">
+            <table>
+                <caption style="padding: 10px;"><b>Sign in form</b></caption>
+                <tr>
+                    <th>Email: </th>
+                    <td><input  name="email" id="email" type="email" placeholder="Enter your gmail address" pattern=".+@gmail.com" required/></td>
+                </tr>
+                <tr>
+                    <th>Password: </th><td><input  name="password" id="password" type="password" placeholder="Enter your password" required/></td>
+                </tr>
+                <tr>
+                    <td>  <input type="checkbox" checked="checked" name="remember"> Remember me</td>
+                  </tr>
+                  <tr>
+                      <td colspan="3">
+                      <input type="reset" class="cancel" name="cancel" value="Reset" >
+                      <input type="submit" id="submit" name="submit" value="Submit">
+                      </td>
+                  </tr>
+                </table>
+            </table>
+        </form>
+        </div>
+           <footer style="position: fixed;">
+                <a href="mcah.html" style="text-decoration: none;">&copy; Created by MCAH 2019</a>
+            </footer>
+    </body>
+</html>
