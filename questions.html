@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Question</title>
+    <link rel="stylesheet" type="text/css" href="css/newsletter.css">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script type="text/javascript" src="js/questions%20slider.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/logout.css">
+
+  </head>
+  <body onload="showDivs(1)">
+      <nav id="navbar">
+      <a href="index.php"><h1 class="logo">MnM</h1></a>
+      <ul>
+        <li><a href="statistics.html">Statistics</a></li>
+        <li><a href="events.html">Events</a></li>
+         <li><a href="voting.html">Voting</a></li>
+        <li><a href="questions.html">Questions</a></li>
+       </ul>
+      </nav>
+         <main class="full">
+    <div id="q-slider">
+        <h1 style="color: rebeccapurple; margin-left: 325px;">Questions</h1>
+<hr>
+        <div class="mySlides" >
+        </div>
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+         <div id="head-questions1" class="mySlides">
+         <form action="questionproc.php" id="form-questions1" method="post">
+             <h3>YES or NO questions.</h3>
+             <hr>
+             <table>
+                 <br>
+                 <tr>
+                     <td>
+                         <ul><li>Do you like sports?</li></ul>
+                     </td>
+                   <td>
+                       <label class="container">
+                        <input type="radio"  name="sports"  value="Yes"/> Yes
+                           <span class="checkmark"></span>
+</label>
+                    <label class="container">
+                         <input type = "radio"  name = "sports"  value = "No"/> No
+                        <span class="checkmark"></span>
+</label>
+                     </td>
+                     </tr>
+                 <tr>
+                     <td>
+                         <ul><li>Are you a social person?</li></ul>
+                     </td>
+                     <td>
+                 <label class="container">
+                         <input type = "radio"  name = "social"  value = "Yes" /> Yes
+                     <span class="checkmark"></span>
+</label>
+                <label class="container">
+                         <input type = "radio"  name = "social"  value = "No" /> No
+                     <span class="checkmark"></span>
+</label>
+                     </td>
+                 </tr>
+                 <tr>
+                   <td>
+                      <ul><li>Do you like gaming?</li></ul>
+                   </td>
+                   <td >
+                                        <label class="container">
+                        <input type = "radio"  name = "gaming"  value = "Yes" /> Yes
+                                            <span class="checkmark"></span>
+</label>
+                        <label class="container">
+                        <input type = "radio"  name = "gaming"  value = "No" /> No
+                             <span class="checkmark"></span>
+</label>
+                   </td>
+                      </tr>
+                     <tr>
+                       <td>
+
+                          <ul><li>  Do you like to read?  </li></ul>
+                       </td>
+                       <td>
+                             <label class="container">
+                         <input type = "radio"  name = "read"  value = "Yes" /> Yes
+                                 <span class="checkmark"></span>
+</label>
+                             <label class="container">
+                         <input type = "radio"  name = "read"  value = "No" /> No
+                                  <span class="checkmark"></span>
+</label>
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                          <ul><li>
+                           Have you ever clicked "i agree" on the terms and conditions, without reading it?
+                         </li></ul>
+                       </td>
+                       <td>
+                           <label class="container">
+                         <input type = "radio"  name = "terms"  value = "Yes" /> Yes
+                                <span class="checkmark"></span>
+</label>
+                           <label class="container">
+                         <input type = "radio"  name = "terms"  value = "No" /> No
+                                <span class="checkmark"></span>
+</label>
+                       </td>
+                     </tr>
+                   <tr>
+                     <td>   <ul><li>
+                         Do you sit on your computer a lot?
+                        </li></ul>
+                        <td> <label class="container">
+                         <input type = "radio"  name = "computer"  value = "Yes" /> Yes
+                                <span class="checkmark"></span>
+</label>
+                           <label class="container">
+                         <input type = "radio"  name = "computer"  value = "No" /> No
+                                <span class="checkmark"></span>
+</label></td>
+                   </tr>
+                 <tr>
+                   <td>      <ul><li>
+                          Do you travel a lot?
+                        </li></ul>
+                        <td><label class="container">
+                         <input type = "radio"  name = "travel"  value = "Yes" /> Yes
+                                <span class="checkmark"></span>
+</label>
+                           <label class="container">
+                         <input type = "radio"  name = "travel"  value = "No" /> No
+                                <span class="checkmark"></span>
+</label></td>
+                 </tr>
+                   <tr>
+                     <td>    <ul><li>
+                          Do you like to sing?
+                        </li></ul>
+                        <td><label class="container">
+                         <input type = "radio"  name = "sing"  value = "Yes" /> Yes
+                                <span class="checkmark"></span>
+</label>
+                           <label class="container">
+                         <input type = "radio"  name = "sing"  value = "No" /> No
+                                <span class="checkmark"></span>
+</label></td>
+                   </tr>
+                   <tr>
+                     <td>      <ul><li>
+                            Do you like arabic music?
+                          </li></ul>
+                          <td><label class="container">
+                         <input type = "radio"  name = "arabic"  value = "Yes" /> Yes
+                                <span class="checkmark"></span>
+</label>
+                           <label class="container">
+                         <input type = "radio"  name = "arabic"  value = "No" /> No
+                                <span class="checkmark"></span>
+</label></td>
+                   </tr>
+                   <tr>
+                   <td>      <ul><li>
+                          Are you a family person?
+                        </li></ul>
+                        <td>
+                          <label class="container">
+                         <input type = "radio"  name = "family"  value = "Yes" /> Yes
+                                <span class="checkmark"></span>
+</label>
+                           <label class="container">
+                         <input type = "radio"  name = "family"  value = "No" /> No
+                                <span class="checkmark"></span>
+</label></td>
+                 </tr>
+                     <tr>
+                       <td>  <ul><li>
+                          Do you like animals?
+                        </li></ul>
+                        <td> <label class="container">
+                         <input type = "radio"  name = "animals"  value = "Yes" /> Yes
+                                <span class="checkmark"></span>
+</label>
+                           <label class="container">
+                         <input type = "radio"  name = "animals"  value = "No" /> No
+                                <span class="checkmark"></span>
+</label></td>
+                     </tr>
+                     <tr>
+                       <td>    <ul><li>
+                            Do you believe in extraterrestrials or life on other planets?
+
+                          </li></ul>
+                          <td><label class="container">
+                         <input type = "radio"  name = "life"  value = "Yes" /> Yes
+                                <span class="checkmark"></span>
+</label>
+                           <label class="container">
+                         <input type = "radio"  name = "life"  value = "No" /> No
+                                <span class="checkmark"></span>
+</label></td>
+                     </tr>
+
+                 <tr>
+                   <td>      <ul><li>
+                          Do you see yourself getting married in the next 5 years?
+
+                        </li></ul>
+                        <td> <label class="container">
+                         <input type = "radio"  name = "married"  value = "Yes" /> Yes
+                                <span class="checkmark"></span>
+</label>
+                           <label class="container">
+                         <input type = "radio"  name = "married"  value = "No" /> No
+                                <span class="checkmark"></span>
+</label></td>
+                 </tr>
+               </table>
+             <input type="submit" value="Submit">
+              <input type="submit" value="Save">
+
+             </form>
+                 </div>
+
+                <div id="head-questions2" class="mySlides">
+                    <form action="" id="form-questions2">
+                        <h3>What Do you prefer?:</h3>
+                        <hr>
+                        <table>
+                            <br>
+                          <tr>
+                            <td>  <ul><li>
+                               Harry Potter or The Lord of the Rings?
+                             </li></ul>
+                             <td>  <input type = "radio"  name = "harry"  value = "harry" /> Harry Potter</td>
+                               <td><input type = "radio"  name = "harry"  value = "lord" /> The Lord of the Rings</td>
+                          </tr>
+                     <tr>
+                       <td> <ul><li>
+                         Go to the theater or a movie?
+                       </li></ul>
+                       <td><input type = "radio"  name = "theater"  value = "theater" />Theater</td>
+                       <td><input type = "radio"  name = "theater"  value = "movie" /> Movie</td>
+                     </tr>
+                      <tr>
+                        <td> <ul><li>
+                          Watch TV or read a book?
+                        </li></ul>
+                        <td> <input type = "radio"  name = "tv"  value = "tv" /> TV</td>
+                        <td>  <input type = "radio"  name = "tv"  value = "book" /> Book</td>
+                      </tr>
+                      <tr>
+                        <td> <ul><li>
+                          Use IOS, or Android phone?
+                        </li></ul>
+                        <td> <input type = "radio"  name = "iphone"  value = "iphone" /> IOS</td>
+                     <td><input type = "radio"  name = "iphone"  value = "android" /> Android</td>
+                      </tr>
+                        <tr>
+                          <td>    <ul><li>
+                             Dog or Cat?
+                                 </li></ul>
+                                 <td><input type = "radio"  name = "dog"  value = "dog" /> Dog</td>
+                                   <td><input type = "radio"  name = "dog"  value = "cat" /> Cat</td>
+                        </tr>
+                        <tr>
+
+                            <td> <ul><li>
+                           Netflix or YouTube?
+                          </li></ul>
+                        </td>
+                          <td> <input type = "radio"  name = "netflix"  value = "netflix" /> Netflix</td>
+                         <td><input type = "radio"  name = "netflix"  value = "Youtube" /> Youtube</td>
+                        </tr>
+                        <tr>
+               <td>      <ul><li>
+                     Phone Call or Text?
+                    </li></ul>
+               </td>
+               <td><input type = "radio"  name = "phone"  value = "phone" /> Phone call</td>
+               <td><input type = "radio"  name = "phone"  value = "text" /> Text</td>
+             </tr>
+             <tr>
+                        <td> <ul><li>
+                         Dine In or Delivery?
+                        </li></ul>
+                        <td> <input type = "radio"  name = "dine"  value = "dine" /> Dine in</td>
+                         <td>  <input type = "radio"  name = "dine"  value = "delivery" /> Delivery</td>
+                      </tr>
+                     <tr>
+                       <td>  <ul><li>
+                         Pop music or Rock music?
+                        </li></ul>
+                        <td> <input type = "radio"  name = "pop"  value = "pop" /> Pop music</td>
+                       <td>  <input type = "radio"  name = "pop"  value = "rock" /> Rock music</td>
+                     </tr>
+               <tr>
+                 <td>        <ul><li>
+                         Hot chocolate or coffee?
+                        </li></ul>
+                        <td>  <input type = "radio"  name = "chocolate"  value = "chocolate" /> Hot chocolate</td>
+                       <td>  <input type = "radio"  name = "chocolate"  value = "coffee" /> Coffee</td>
+               </tr>
+               <tr>
+                 <td>  <ul><li>
+                   Day or night?
+                  </li></ul>
+                  <td>   <input type = "radio"  name = "day"  value = "day" /> Day</td>
+                   <td>  <input type = "radio"  name = "day"  value = "night" /> Night</td>
+               </tr>
+                     <tr>
+                       <td>    <ul><li>
+                           Fruits or vegetables?
+                          </li></ul>
+                          <td><input type = "radio"  name = "fruits"  value = "fruits" /> Fruits</td>
+                         <td> <input type = "radio"  name = "fruits"  value = "vegetables" /> Vegetables</td>
+                     </tr>
+                   <tr>
+                     <td>    <ul><li>
+                         Money or fame?
+                        </li></ul>
+                        <td><input type = "radio"  name = "money"  value = "money" /> Money</td>
+                        <td><input type = "radio"  name = "money"  value = "fame" /> Fame</td>
+                   </tr>
+                   <tr>
+                     <td>    <ul><li>
+                         Mountains or beach?
+                        </li></ul>
+                        <td><input type = "radio"  name = "mountains"  value = "mountains" /> Mountains</td>
+                        <td><input type = "radio"  name = "mountains"  value = "beach" /> Beach</td>
+                   </tr>
+                   <tr>
+                     <td>    <ul><li>
+                         Being too warm or too cold?
+                        </li></ul>
+                        <td>   <input type = "radio"  name = "warm"  value = "warm" /> Warm</td>
+                       <td><input type = "radio"  name = "warm"  value = "cold" /> Cold</td>
+                   </tr>
+                   <tr>
+                     <td>        <ul><li>
+                             Basketball or Football?
+                            </li></ul>
+                            <td> <input type = "radio"  name = "basketball"  value = "basketball" /> Basketball</td>
+                             <td><input type = "radio"  name = "basketball"  value = "football" /> Football</td>
+                   </tr>
+                     <tr>
+                       <td>  <ul><li>
+                         Spring or Fall?
+                        </li></ul>
+                        <td> <input type = "radio"  name = "spring"  value = "spring" /> Spring</td>
+                         <td><input type = "radio"  name = "spring"  value = "fall" /> Fall</td>
+                     </tr>
+             </table>
+         <input type="submit" value="Submit">
+              <input type="submit" value="Reset">
+
+         </form>
+
+        </div>
+        <div id="head-questions3" class="mySlides">
+        <form action="" id="form-questions3">
+          <h3>Agree/Disagree questions:</h3>
+          <hr>
+          <table>
+              <br>
+                   <tr>
+                <td><ul><li>
+                      I make friends easily:</li></ul>
+                 <td>  <input type = "radio"  name = "friend"  value = "Strongly disagree" />Strongly Disagree</td>
+                   <td><input type = "radio"  name = "friend"  value = "Disagree" />Disagree</td>
+                   <td>  <input type = "radio"  name = "friend"  value = "Agree" />Agree</td>
+                     <td><input type = "radio"  name = "friend"  value = "Strongly agree" />Strongly agree</td>
+              </tr>
+            <tr>
+                <td><ul><li>
+                I have a vivid imagination:</li></ul>
+               <td>  <input type = "radio"  name = "imagination"  value = "Strongly disagree" />Strongly Disagree</td>
+                 <td><input type = "radio"  name = "imagination"  value = "Disagree" />Disagree</td>
+                 <td>  <input type = "radio"  name = "imagination"  value = "Agree" />Agree</td>
+                   <td><input type = "radio"  name = "imagination"  value = "Strongly agree" />Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I worry about things:
+               </li></ul>
+               <td>  <input type = "radio"  name = "worry"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "worry"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "worry"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "worry"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                I love large parties:
+               </li></ul>
+               <td>  <input type = "radio"  name = "parties"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "parties"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "parties"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "parties"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                I get angry easily:
+               </li></ul>
+               <td>  <input type = "radio"  name = "angry"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "angry"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "angry"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "angry"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                I take charge:
+               </li></ul>
+               <td>  <input type = "radio"  name = "charge"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "charge"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "charge"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "charge"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I experience my emotions intensely:
+               </li></ul>
+               <td>  <input type = "radio"  name = "intensely"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "intensely"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "intensely"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "intensely"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I often feel blue:
+               </li></ul>
+               <td>  <input type = "radio"  name = "blue"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "blue"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "blue"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "blue"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I am always busy:
+               </li></ul>
+               <td>  <input type = "radio"  name = "busy"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "busy"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "busy"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "busy"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I prefer variety to routine:
+               </li></ul>
+               <td>  <input type = "radio"  name = "routine"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "routine"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "routine"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "routine"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I like to solve complex problems:
+               </li></ul>
+               <td>  <input type = "radio"  name = "problems"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "problems"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "problems"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "problems"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I often eat too much:
+               </li></ul>
+               <td>  <input type = "radio"  name = "eat"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "eat"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "eat"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "eat"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I trust others:
+               </li></ul>
+               <td>  <input type = "radio"  name = "trust"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "trust"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "trust"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "trust"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I make people feel welcome:
+               </li></ul>
+               <td>  <input type = "radio"  name = "welcome"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "welcome"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "welcome"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "welcome"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I dislike being the center of attention:
+               </li></ul>
+               <td>  <input type = "radio"  name = "attention"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "attention"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "attention"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "attention"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                I like order:
+               </li></ul>
+               <td>  <input type = "radio"  name = "order"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "order"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "order"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "order"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I try to follow the rules:
+               </li></ul>
+               <td>  <input type = "radio"  name = "rules"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "rules"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "rules"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "rules"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+              I seek adventure:
+               </li></ul>
+               <td>  <input type = "radio"  name = "adventure"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "adventure"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "adventure"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "adventure"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I like music:
+               </li></ul>
+               <td>  <input type = "radio"  name = "music"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "music"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "music"  value = "Agree" /> Agree</td>
+                 <td><input type = "radio"  name = "music"  value = "Strongly agree" /> Strongly agree</td>
+
+               </tr>
+            <tr>
+              <td>  <ul><li>
+                 I feel others' emotions:
+               </li></ul>
+               <td>  <input type = "radio"  name = "feel"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "feel"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "feel"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "feel"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I like to visit new places:
+               </li></ul>
+               <td>  <input type = "radio"  name = "places"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "places"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "places"  value = "Agree" /> Agree</td>
+                 <td><input type = "radio"  name = "places"  value = "Strongly agree" /> Strongly agree</td>
+
+               </tr>
+            <tr>
+              <td>  <ul><li>
+                 I love to read challenging material:
+               </li></ul>
+               <td>  <input type = "radio"  name = "challenging"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "challenging"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "challenging"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "challenging"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I believe that there is no absolute right and wrong:
+               </li></ul>
+               <td>  <input type = "radio"  name = "absolute"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "absolute"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "absolute"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "absolute"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I believe that others have good intentions:
+               </li></ul>
+               <td>  <input type = "radio"  name = "intentions"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "intentions"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "intentions"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "intentions"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I can't stand confrontations:
+               </li></ul>
+               <td>  <input type = "radio"  name = "confrontation"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "confrontation"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "confrontation"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "confrontation"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I dislike talking about myself:
+               </li></ul>
+               <td>  <input type = "radio"  name = "myself"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "myself"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "myself"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "myself"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                I keep my promises:
+               </li></ul>
+               <td>  <input type = "radio"  name = "promises"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "promises"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "promises"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "promises"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I enjoy being part of a group:
+               </li></ul>
+               <td>  <input type = "radio"  name = "group"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "group"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "group"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "group"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I believe that criminals should receive help rather than punishment:
+               </li></ul>
+               <td>  <input type = "radio"  name = "criminals"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "criminals"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "criminals"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "criminals"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I use flattery to get ahead:
+               </li></ul>
+               <td>  <input type = "radio"  name = "flattery"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "flattery"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "flattery"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "flattery"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I consider myself an average person:
+               </li></ul>
+               <td>  <input type = "radio"  name = "average"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "average"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "average"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "average"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            <tr>
+              <td>  <ul><li>
+                 I value cooperation over competition:
+               </li></ul>
+               <td>  <input type = "radio"  name = "cooperation"  value = "Strongly disagree" /> Strongly Disagree</td>
+                 <td><input type = "radio"  name = "cooperation"  value = "Disagree" /> Disagree</td>
+                 <td>  <input type = "radio"  name = "cooperation"  value = "Agree" /> Agree</td>
+                   <td><input type = "radio"  name = "cooperation"  value = "Strongly agree" /> Strongly agree</td>
+            </tr>
+            </table>
+         <input type="submit" value="Submit">
+              <input type="submit" value="Reset">
+
+            </form>
+
+        </div>
+
+      </div>
+</main>
+
+    <div id="navigation">
+	<a id="button" href="logout.php">
+  	<img id="logoutimg" src="https://pbs.twimg.com/profile_images/378800000639740507/fc0aaad744734cd1dbc8aeb3d51f8729_400x400.jpeg">
+  <div id="logout">LOGOUT</div>
+        </a>
+</div>
+       <footer style="position: fixed;">
+              <a href="mcah.html" style="text-decoration: none;">&copy; Created by MCAH 2019</a>
+          </footer>
+
+  </body>
+
+</html>
